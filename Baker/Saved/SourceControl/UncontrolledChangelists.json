@@ -5,16 +5,18 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"C:/Users/Brendan/Desktop/TheBuoyantBaker/Baker/Content/BPs/Crate.uasset",
+				"C:/Users/Brendan/Desktop/TheBuoyantBaker/Baker/Content/WhiteboxShip.umap",
+				"C:/Users/Brendan/Desktop/TheBuoyantBaker/Baker/Content/BPs/ShipTest_BP.uasset",
+				"C:/Users/Brendan/Desktop/TheBuoyantBaker/Baker/Content/TopDown/Blueprints/BP_TopDownCharacter.uasset",
+				"C:/Users/Brendan/Desktop/TheBuoyantBaker/Baker/Content/Shaders/KuwaharaFilter_PPBase.uasset",
+				"C:/Users/Brendan/Desktop/TheBuoyantBaker/Baker/Content/Shaders/KuwaharaFilter_PPBase_Inst.uasset",
 				"C:/Users/c1095935/Documents/TheBuoyantBaker/Baker/Content/TopDown/Blueprints/BP_TopDownCharacter.uasset",
 				"C:/Users/c1095935/Documents/TheBuoyantBaker/Baker/Content/BPs/ShipTest_BP.uasset",
 				"C:/Users/c1095935/Documents/TheBuoyantBaker/Baker/Content/WhiteboxShip.umap",
 				"C:/Users/c1095935/Documents/TheBuoyantBaker/Baker/Content/BPs/Crate.uasset",
 				"C:/Users/c1095935/Documents/TheBuoyantBaker/Baker/Content/BPs/CrateSlide_Mat.uasset",
-				"C:/Users/c1095935/Documents/TheBuoyantBaker/Baker/Content/BPs/CratePlaceholder.uasset",
-				"C:/Users/Brendan/Desktop/TheBuoyantBaker/Baker/Content/BPs/Crate.uasset",
-				"C:/Users/Brendan/Desktop/TheBuoyantBaker/Baker/Content/WhiteboxShip.umap",
-				"C:/Users/Brendan/Desktop/TheBuoyantBaker/Baker/Content/BPs/ShipTest_BP.uasset",
-				"C:/Users/Brendan/Desktop/TheBuoyantBaker/Baker/Content/TopDown/Blueprints/BP_TopDownCharacter.uasset"
+				"C:/Users/c1095935/Documents/TheBuoyantBaker/Baker/Content/BPs/CratePlaceholder.uasset"
 			]
 		}
 	]
