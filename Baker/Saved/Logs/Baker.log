@@ -6148,3 +6148,22 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.01.27-14.02.30:020][645]LogContentValidation: Display: Validating /Script/Engine.World /Game/WhiteboxShip.WhiteboxShip
 [2024.01.27-14.02.30:697][709]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
 [2024.01.27-14.02.30:848][720]LogUObjectHash: Compacting FUObjectHashTables data took   0.55ms
+[2024.01.27-14.03.20:540][448]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2024.01.27-14.03.32:544][633]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.01.27-14.03.32:607][633]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/WhiteboxShip" FILE="C:/Users/c1095935/Documents/TheBuoyantBaker/Baker/Content/WhiteboxShip.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2024.01.27-14.03.32:628][633]LogUObjectHash: Compacting FUObjectHashTables data took   0.90ms
+[2024.01.27-14.03.32:675][633]LogSavePackage: Moving output files for package: /Game/WhiteboxShip
+[2024.01.27-14.03.32:675][633]LogSavePackage: Moving 'C:/Users/c1095935/Documents/TheBuoyantBaker/Baker/Saved/WhiteboxShip7BDB332944BFC0DC540750893F1D5524.tmp' to 'C:/Users/c1095935/Documents/TheBuoyantBaker/Baker/Content/WhiteboxShip.umap'
+[2024.01.27-14.03.32:683][633]LogFileHelpers: Saving map 'WhiteboxShip' took 0.075
+[2024.01.27-14.03.32:689][633]LogFileHelpers: InternalPromptForCheckoutAndSave took 144 ms (total: 5.03 sec)
+[2024.01.27-14.03.32:694][633]AssetCheck: New page: Asset Save: WhiteboxShip
+[2024.01.27-14.03.32:694][633]LogContentValidation: Display: Validating /Script/Engine.World /Game/WhiteboxShip.WhiteboxShip
+[2024.01.27-14.03.32:758][639]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.01.27-14.03.32:792][639]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/WhiteboxShip" FILE="C:/Users/c1095935/Documents/TheBuoyantBaker/Baker/Content/WhiteboxShip.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2024.01.27-14.03.32:811][639]LogUObjectHash: Compacting FUObjectHashTables data took   0.49ms
+[2024.01.27-14.03.32:856][639]LogSavePackage: Moving output files for package: /Game/WhiteboxShip
+[2024.01.27-14.03.32:857][639]LogSavePackage: Moving 'C:/Users/c1095935/Documents/TheBuoyantBaker/Baker/Saved/WhiteboxShipDC441B754B8027ED2EB56DA816F76DFF.tmp' to 'C:/Users/c1095935/Documents/TheBuoyantBaker/Baker/Content/WhiteboxShip.umap'
+[2024.01.27-14.03.32:864][639]LogFileHelpers: Saving map 'WhiteboxShip' took 0.072
+[2024.01.27-14.03.32:872][639]LogFileHelpers: InternalPromptForCheckoutAndSave took 114 ms (total: 5.14 sec)
+[2024.01.27-14.03.32:877][639]AssetCheck: New page: Asset Save: WhiteboxShip
+[2024.01.27-14.03.32:878][639]LogContentValidation: Display: Validating /Script/Engine.World /Game/WhiteboxShip.WhiteboxShip
