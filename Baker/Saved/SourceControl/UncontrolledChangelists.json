@@ -5,6 +5,13 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"C:/Users/c1095935/Desktop/TheBuoyantBaker/Baker/Content/Assets/BOAT_pCube1.uasset",
+				"C:/Users/c1095935/Desktop/TheBuoyantBaker/Baker/Content/WhiteboxShip.umap",
+				"C:/Users/c1095935/Desktop/TheBuoyantBaker/Baker/Content/BPs/BP_Ship.uasset",
+				"C:/Users/c1095935/Desktop/TheBuoyantBaker/Baker/Content/TopDown/Blueprints/Crates/BP_EggCrate.uasset",
+				"C:/Users/c1095935/Desktop/TheBuoyantBaker/Baker/Content/TopDown/Blueprints/Crates/BP_FlourCrate.uasset",
+				"C:/Users/c1095935/Desktop/TheBuoyantBaker/Baker/Content/TopDown/Blueprints/Crates/BP_MilkCrate.uasset",
+				"C:/Users/c1095935/Desktop/TheBuoyantBaker/Baker/Content/TopDown/Blueprints/Crates/BP_SugarCrate.uasset",
 				"C:/Users/Brendan/Desktop/TheBuoyantBaker/Baker/Content/BPs/Crate.uasset",
 				"C:/Users/Brendan/Desktop/TheBuoyantBaker/Baker/Content/WhiteboxShip.umap",
 				"C:/Users/Brendan/Desktop/TheBuoyantBaker/Baker/Content/BPs/ShipTest_BP.uasset",

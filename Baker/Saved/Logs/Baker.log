@@ -3524,3 +3524,198 @@ Script Stack (0 frames) :
 [2024.01.28-16.47.52:085][ 76]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
 [2024.01.28-16.47.52:085][ 76]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
 [2024.01.28-16.47.52:145][ 78]LogPlayLevel: Display: Destroying online subsystem :Context_43
+[2024.01.28-16.48.38:294][760]LogAssetRegistry: Warning: ScanPathsSynchronous: Package /Game/Untitled does not exist, will not scan.
+[2024.01.28-16.48.38:629][761]LogAssetRegistry: Warning: ScanPathsSynchronous: Package /Game/Untitled does not exist, will not scan.
+[2024.01.28-16.48.50:298][796]LogAssetRegistry: Warning: ScanPathsSynchronous: Package /Game/Untitled does not exist, will not scan.
+[2024.01.28-16.48.51:632][800]LogAssetRegistry: Warning: ScanPathsSynchronous: Package /Game/Untitled does not exist, will not scan.
+[2024.01.28-16.48.53:972][808]LogDebuggerCommands: Repeating last play command: Simulate
+[2024.01.28-16.48.53:979][808]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.01.28-16.48.53:979][808]PIE: New page: SIE session: WhiteboxShip (28 Jan 2024, 16:48:53)
+[2024.01.28-16.48.53:979][808]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_WhiteboxShip
+[2024.01.28-16.48.53:989][808]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009307s)
+[2024.01.28-16.48.53:989][808]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/WhiteboxShip.WhiteboxShip to /Game/UEDPIE_0_WhiteboxShip.WhiteboxShip (0.009336s)
+[2024.01.28-16.48.53:989][808]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.01.28-16.48.53:989][808]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.01.28-16.48.53:989][808]LogAIModule: Creating AISystem for world WhiteboxShip
+[2024.01.28-16.48.53:990][808]LogPlayLevel: PIE: World Init took: (0.000963s)
+[2024.01.28-16.48.54:009][808]LogUObjectHash: Compacting FUObjectHashTables data took   0.94ms
+[2024.01.28-16.48.54:010][808]LogAudio: Display: Creating Audio Device:                 Id: 21, Scope: Unique, Realtime: True
+[2024.01.28-16.48.54:011][808]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.01.28-16.48.54:011][808]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.01.28-16.48.54:011][808]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.01.28-16.48.54:011][808]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.01.28-16.48.54:011][808]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.01.28-16.48.54:011][808]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2024.01.28-16.48.54:011][808]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.01.28-16.48.54:011][808]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.01.28-16.48.54:011][808]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.01.28-16.48.54:011][808]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.01.28-16.48.54:011][808]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.01.28-16.48.54:013][808]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.01.28-16.48.54:048][808]LogAudioMixer: Display: Using Audio Hardware Device Speakers (Realtek(R) Audio)
+[2024.01.28-16.48.54:048][808]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.01.28-16.48.54:048][808]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.01.28-16.48.54:048][808]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.01.28-16.48.54:049][808]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=21
+[2024.01.28-16.48.54:049][808]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=21
+[2024.01.28-16.48.54:050][808]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=21
+[2024.01.28-16.48.54:050][808]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=21
+[2024.01.28-16.48.54:050][808]LogInit: FAudioDevice initialized with ID 21.
+[2024.01.28-16.48.54:050][808]LogAudio: Display: Audio Device (ID: 21) registered with world 'WhiteboxShip'.
+[2024.01.28-16.48.54:051][808]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 21
+[2024.01.28-16.48.54:057][808]LogLoad: Game class is 'BP_TopDownGameMode_C'
+[2024.01.28-16.48.54:060][808]LogWorld: Bringing World /Game/UEDPIE_0_WhiteboxShip.WhiteboxShip up for play (max tick rate 0) at 2024.01.28-16.48.54
+[2024.01.28-16.48.54:062][808]LogWorld: Bringing up level for play took: 0.004640
+[2024.01.28-16.48.54:063][808]LogOnline: OSS: Created online subsystem instance for: :Context_44
+[2024.01.28-16.48.54:064][808]PIE: Server logged in
+[2024.01.28-16.48.54:065][808]PIE: Play in editor total start time 0.086 seconds.
+[2024.01.28-16.48.54:072][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:072][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:073][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:073][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:073][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:074][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:074][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:075][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:075][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:076][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:076][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:076][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:077][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:077][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:077][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:078][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:078][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:078][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:079][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:079][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:079][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:080][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:080][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:080][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:081][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:081][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:081][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:081][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.54:082][808]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.58:165][123]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.01.28-16.48.58:165][123]LogWorld: BeginTearingDown for /Game/UEDPIE_0_WhiteboxShip
+[2024.01.28-16.48.58:166][123]LogWorld: UWorld::CleanupWorld for WhiteboxShip, bSessionEnded=true, bCleanupResources=true
+[2024.01.28-16.48.58:167][123]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.01.28-16.48.58:170][123]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.01.28-16.48.58:174][123]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.01.28-16.48.58:192][123]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.01.28-16.48.58:192][123]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 21
+[2024.01.28-16.48.58:192][123]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=21
+[2024.01.28-16.48.58:193][123]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=21
+[2024.01.28-16.48.58:200][123]LogUObjectHash: Compacting FUObjectHashTables data took   1.16ms
+[2024.01.28-16.48.58:211][123]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.58:211][123]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.58:211][123]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.58:212][123]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.58:212][123]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.58:212][123]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.58:213][123]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.58:213][123]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.58:213][123]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.58:214][123]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.58:214][123]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.58:214][123]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.58:215][123]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.58:215][123]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.58:215][123]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.58:216][123]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.58:216][123]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.58:216][123]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.58:217][123]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.48.58:229][125]LogPlayLevel: Display: Destroying online subsystem :Context_44
+[2024.01.28-16.49.23:847][595]LogSlate: Window 'Details' being destroyed
+[2024.01.28-16.49.23:854][595]LogViewport: Scene viewport resized to 1526x289, mode Windowed.
+[2024.01.28-16.49.25:084][736]LogViewport: Scene viewport resized to 1526x585, mode Windowed.
+[2024.01.28-16.49.25:103][736]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.49.25:103][736]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.49.27:788][  9]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.49.27:805][ 11]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.49.34:155][727]LogUObjectHash: Compacting FUObjectHashTables data took   1.02ms
+[2024.01.28-16.49.34:176][727]LogUObjectHash: Compacting FUObjectHashTables data took   0.46ms
+[2024.01.28-16.49.35:500][727]LogSlate: Window 'Save Content' being destroyed
+[2024.01.28-16.49.35:509][727]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.01.28-16.49.35:545][727]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/WhiteboxShip" FILE="C:/Users/c1095935/Desktop/TheBuoyantBaker/Baker/Content/WhiteboxShip.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2024.01.28-16.49.35:562][727]LogUObjectHash: Compacting FUObjectHashTables data took   0.46ms
+[2024.01.28-16.49.35:605][727]LogSavePackage: Moving output files for package: /Game/WhiteboxShip
+[2024.01.28-16.49.35:605][727]LogSavePackage: Moving 'C:/Users/c1095935/Desktop/TheBuoyantBaker/Baker/Saved/WhiteboxShip8275ED1444F1E03BC503C78E13CCE2D0.tmp' to 'C:/Users/c1095935/Desktop/TheBuoyantBaker/Baker/Content/WhiteboxShip.umap'
+[2024.01.28-16.49.35:611][727]LogFileHelpers: Saving map 'WhiteboxShip' took 0.067
+[2024.01.28-16.49.35:619][727]LogFileHelpers: InternalPromptForCheckoutAndSave took 110 ms (total: 2.42 sec)
+[2024.01.28-16.49.35:623][727]AssetCheck: New page: Asset Save: WhiteboxShip
+[2024.01.28-16.49.35:623][727]LogContentValidation: Display: Validating /Script/Engine.World /Game/WhiteboxShip.WhiteboxShip
+[2024.01.28-16.49.49:307][147]LogAssetRegistry: Warning: ScanPathsSynchronous: Package /Game/Untitled does not exist, will not scan.
+[2024.01.28-16.50.08:563][864]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/TopDown/Blueprints/Crates/BP_EggCrate.BP_EggCrate
+[2024.01.28-16.50.08:563][864]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.01.28-16.50.08:563][864]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.01.28-16.50.17:532][612]BlueprintLog: New page: Compile BP_EggCrate
+[2024.01.28-16.50.17:576][612]LogUObjectHash: Compacting FUObjectHashTables data took   1.00ms
+[2024.01.28-16.50.17:606][612]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.50.18:281][664]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.01.28-16.50.18:348][664]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TopDown/Blueprints/Crates/BP_EggCrate" FILE="C:/Users/c1095935/Desktop/TheBuoyantBaker/Baker/Content/TopDown/Blueprints/Crates/BP_EggCrate.uasset" SILENT=true
+[2024.01.28-16.50.18:352][664]LogSavePackage: Moving output files for package: /Game/TopDown/Blueprints/Crates/BP_EggCrate
+[2024.01.28-16.50.18:354][664]LogSavePackage: Moving 'C:/Users/c1095935/Desktop/TheBuoyantBaker/Baker/Saved/BP_EggCrateF219597147ACCC51AF19F599005B3037.tmp' to 'C:/Users/c1095935/Desktop/TheBuoyantBaker/Baker/Content/TopDown/Blueprints/Crates/BP_EggCrate.uasset'
+[2024.01.28-16.50.18:359][664]LogFileHelpers: InternalPromptForCheckoutAndSave took 78 ms (total: 2.50 sec)
+[2024.01.28-16.50.18:363][664]AssetCheck: New page: Asset Save: BP_EggCrate
+[2024.01.28-16.50.18:364][664]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/TopDown/Blueprints/Crates/BP_EggCrate.BP_EggCrate
+[2024.01.28-16.50.20:054][806]LogWorld: UWorld::CleanupWorld for World_22, bSessionEnded=true, bCleanupResources=true
+[2024.01.28-16.50.20:054][806]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.01.28-16.50.20:548][848]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2024.01.28-16.50.20:548][848]LogWorld: UWorld::CleanupWorld for World_23, bSessionEnded=true, bCleanupResources=true
+[2024.01.28-16.50.20:548][848]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.01.28-16.50.23:148][987]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/TopDown/Blueprints/Crates/BP_FlourCrate.BP_FlourCrate
+[2024.01.28-16.50.23:148][987]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.01.28-16.50.23:148][987]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.01.28-16.50.30:740][602]BlueprintLog: New page: Compile BP_FlourCrate
+[2024.01.28-16.50.30:787][602]LogUObjectHash: Compacting FUObjectHashTables data took   1.39ms
+[2024.01.28-16.50.30:821][602]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.50.31:130][621]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.01.28-16.50.31:171][621]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TopDown/Blueprints/Crates/BP_FlourCrate" FILE="C:/Users/c1095935/Desktop/TheBuoyantBaker/Baker/Content/TopDown/Blueprints/Crates/BP_FlourCrate.uasset" SILENT=true
+[2024.01.28-16.50.31:176][621]LogSavePackage: Moving output files for package: /Game/TopDown/Blueprints/Crates/BP_FlourCrate
+[2024.01.28-16.50.31:177][621]LogSavePackage: Moving 'C:/Users/c1095935/Desktop/TheBuoyantBaker/Baker/Saved/BP_FlourCrateCDAB8AFB4D25F0A12EA10BAB5F1EE406.tmp' to 'C:/Users/c1095935/Desktop/TheBuoyantBaker/Baker/Content/TopDown/Blueprints/Crates/BP_FlourCrate.uasset'
+[2024.01.28-16.50.31:182][621]LogFileHelpers: InternalPromptForCheckoutAndSave took 51 ms (total: 2.55 sec)
+[2024.01.28-16.50.31:186][621]AssetCheck: New page: Asset Save: BP_FlourCrate
+[2024.01.28-16.50.31:186][621]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/TopDown/Blueprints/Crates/BP_FlourCrate.BP_FlourCrate
+[2024.01.28-16.50.32:020][683]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/TopDown/Blueprints/Crates/BP_MilkCrate.BP_MilkCrate
+[2024.01.28-16.50.32:021][683]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.01.28-16.50.32:021][683]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.01.28-16.50.37:001][ 87]BlueprintLog: New page: Compile BP_MilkCrate
+[2024.01.28-16.50.37:045][ 87]LogUObjectHash: Compacting FUObjectHashTables data took   1.04ms
+[2024.01.28-16.50.37:074][ 87]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.50.37:385][107]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.01.28-16.50.37:439][107]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TopDown/Blueprints/Crates/BP_MilkCrate" FILE="C:/Users/c1095935/Desktop/TheBuoyantBaker/Baker/Content/TopDown/Blueprints/Crates/BP_MilkCrate.uasset" SILENT=true
+[2024.01.28-16.50.37:445][107]LogSavePackage: Moving output files for package: /Game/TopDown/Blueprints/Crates/BP_MilkCrate
+[2024.01.28-16.50.37:445][107]LogSavePackage: Moving 'C:/Users/c1095935/Desktop/TheBuoyantBaker/Baker/Saved/BP_MilkCrateD8DF1A0A4D8D3196264C8690EC1262C1.tmp' to 'C:/Users/c1095935/Desktop/TheBuoyantBaker/Baker/Content/TopDown/Blueprints/Crates/BP_MilkCrate.uasset'
+[2024.01.28-16.50.37:451][107]LogFileHelpers: InternalPromptForCheckoutAndSave took 65 ms (total: 2.62 sec)
+[2024.01.28-16.50.37:455][107]AssetCheck: New page: Asset Save: BP_MilkCrate
+[2024.01.28-16.50.37:455][107]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/TopDown/Blueprints/Crates/BP_MilkCrate.BP_MilkCrate
+[2024.01.28-16.50.38:614][198]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/TopDown/Blueprints/Crates/BP_SugarCrate.BP_SugarCrate
+[2024.01.28-16.50.38:614][198]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.01.28-16.50.38:614][198]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.01.28-16.50.43:862][626]BlueprintLog: New page: Compile BP_SugarCrate
+[2024.01.28-16.50.43:905][626]LogUObjectHash: Compacting FUObjectHashTables data took   1.41ms
+[2024.01.28-16.50.43:933][626]LogPackageName: Warning: DoesPackageExist called on PackageName that will always return false. Reason: Input '' was empty.
+[2024.01.28-16.50.44:409][661]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.01.28-16.50.44:469][661]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TopDown/Blueprints/Crates/BP_SugarCrate" FILE="C:/Users/c1095935/Desktop/TheBuoyantBaker/Baker/Content/TopDown/Blueprints/Crates/BP_SugarCrate.uasset" SILENT=true
+[2024.01.28-16.50.44:474][661]LogSavePackage: Moving output files for package: /Game/TopDown/Blueprints/Crates/BP_SugarCrate
+[2024.01.28-16.50.44:475][661]LogSavePackage: Moving 'C:/Users/c1095935/Desktop/TheBuoyantBaker/Baker/Saved/BP_SugarCrate2025C7824A195B06AD0B6DA64E91A617.tmp' to 'C:/Users/c1095935/Desktop/TheBuoyantBaker/Baker/Content/TopDown/Blueprints/Crates/BP_SugarCrate.uasset'
+[2024.01.28-16.50.44:479][661]LogFileHelpers: InternalPromptForCheckoutAndSave took 69 ms (total: 2.69 sec)
+[2024.01.28-16.50.44:484][661]AssetCheck: New page: Asset Save: BP_SugarCrate
+[2024.01.28-16.50.44:484][661]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/TopDown/Blueprints/Crates/BP_SugarCrate.BP_SugarCrate
+[2024.01.28-16.50.45:603][750]LogSlate: Window 'BP_SugarCrate' being destroyed
+[2024.01.28-16.50.45:610][750]LogSlate: Window 'BP_SugarCrate' being destroyed
+[2024.01.28-16.50.45:613][750]LogWorld: UWorld::CleanupWorld for World_24, bSessionEnded=true, bCleanupResources=true
+[2024.01.28-16.50.45:613][750]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.01.28-16.50.45:636][750]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2024.01.28-16.50.45:636][750]LogWorld: UWorld::CleanupWorld for World_25, bSessionEnded=true, bCleanupResources=true
+[2024.01.28-16.50.45:636][750]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.01.28-16.50.45:660][750]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2024.01.28-16.50.45:660][750]LogWorld: UWorld::CleanupWorld for World_26, bSessionEnded=true, bCleanupResources=true
+[2024.01.28-16.50.45:660][750]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.01.28-16.50.45:683][750]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2024.01.28-16.50.45:683][750]LogWorld: UWorld::CleanupWorld for World_27, bSessionEnded=true, bCleanupResources=true
+[2024.01.28-16.50.45:683][750]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
