@@ -73,3 +73,5 @@ Plugins/*/Intermediate/*
 # Cache files for the editor to use
 DerivedDataCache/*
 Baker/Saved/Logs/Baker.log
+*.log
+Baker/Saved/Logs/Baker.log
