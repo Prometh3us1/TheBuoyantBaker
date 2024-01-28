@@ -74,3 +74,4 @@ Plugins/*/Intermediate/*
 DerivedDataCache/*
 Baker/Saved/Logs/Baker.log
 *.log
+Baker/Saved/Logs/Baker.log
