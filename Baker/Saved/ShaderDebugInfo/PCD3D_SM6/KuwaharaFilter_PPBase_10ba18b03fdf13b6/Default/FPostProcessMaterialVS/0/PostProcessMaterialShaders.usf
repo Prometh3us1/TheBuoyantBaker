@@ -4612,16 +4612,16 @@ struct {
 
 cbuffer  UniformBufferConstants_Material 
 {
-	 float4  Material_PreshaderBuffer[3];
+	 float4  Material_PreshaderBuffer[4];
 	 uint BindlessSampler_Material_Wrap_WorldGroupSettings ;
-	 uint  PrePadding_Material_52;
+	 uint  PrePadding_Material_68;
 	 uint BindlessSampler_Material_Clamp_WorldGroupSettings ;
 }
   SamplerState  Material_Wrap_WorldGroupSettings ;
   SamplerState  Material_Clamp_WorldGroupSettings ;
 static const struct
 {
-	 float4  PreshaderBuffer[3];
+	 float4  PreshaderBuffer[4];
 	SamplerState Wrap_WorldGroupSettings;
 	SamplerState Clamp_WorldGroupSettings;
 } Material = {Material_PreshaderBuffer,Material_Wrap_WorldGroupSettings,Material_Clamp_WorldGroupSettings,};
@@ -17546,11 +17546,11 @@ float4 MaterialExpressionDBufferTextureLookup(FMaterialPixelParameters Parameter
 
 float2 CustomExpression0(FMaterialPixelParameters Parameters)
 {
-return GetSceneTextureUV(Parameters);
+return GetDefaultSceneTextureUV(Parameters, 14);
 }
 
 
-float3 CustomExpression1(FMaterialPixelParameters Parameters,float4 SceneTexture,float2 UV,float RADIUS,float2 VIEWSIZE)
+float3 CustomExpression1(FMaterialPixelParameters Parameters,float4 SceneTexture,float2 UV,float2 RADIUS,float2 VIEWSIZE)
 {
 float3 mean[4] = {{0, 0, 0},{0, 0, 0},{0, 0, 0},{0, 0, 0}};
 
@@ -17560,7 +17560,7 @@ float3 sigma[4] = {{0, 0, 0},{0, 0, 0},{0, 0, 0},{0, 0, 0}};
 
 
 
-float2 offsets[4] = {{-RADIUS, -RADIUS}, {-RADIUS, 0}. {0, -RADIUS}, {0, 0}};
+float2 offsets[4] = {{-RADIUS.x, -RADIUS.y}, {-RADIUS.x, 0}, {0, -RADIUS.y}, {0, 0}};
 
 
 
@@ -17570,21 +17570,105 @@ float3 col;
 
 
 
+float gradientX = 0;
+
+float gradientY = 0;
+
+
+
+float sobelX[9] = {-1, -2, -1, 0, 0, 0, 1, 2, 1};
+
+float sobelY[9] = {-1, 0, 1, -2, 0, 2, -1, 0, 1};
+
+
+
+int index = 0;
+
+
+
+float2 texelSize = 1.0/VIEWSIZE;
+
+
+
+for(int x = -1; x <= 1; x++)
+
+{
+
+	for(int y = -1; y <= 1; y++)
+
+	{
+
+		if(index == 4)
+
+		{
+
+			index++;
+
+			continue;
+
+		}
+
+		float2 offset = float2(x, y) * texelSize;
+
+		float3 pxCol = SceneTextureLookup(UV + offset, 14, false).xyz;
+
+		float pxLum = dot(pxCol, float3(0.2126, 0.7152, 0.0722));
+
+
+
+		gradientX += pxLum * sobelX[index];
+
+		gradientY += pxLum * sobelY[index];
+
+
+
+		index++; 
+
+	}
+
+}
+
+
+
+
+
+float angle = 0;
+
+if(abs(gradientX) > 0.001)
+
+{
+
+	angle = atan(gradientY / gradientX);
+
+}
+
+
+
+float s = sin(angle);
+
+float c = cos(angle);
+
+
+
 for(int i = 0; i < 4; i++)
 
 {
 
-	for(int j = 0; j <= RADIUS; j++)
+	for(int j = 0; j <= RADIUS.x; j++)
 
 	{
 
-		for(int k = 0; k <= RADIUS; k++)
+		for(int k = 0; k <= RADIUS.y; k++)
 
 		{
 
 			pos = float2(j, k) + offsets[i];
 
-			float2 uvpos = UV + pos/VIEWSIZE;
+			float2 offs = pos * texelSize;
+
+			offs = float2(offs.x * c - off.y * s, offs.x * s + offs.y * c);
+
+			float2 uvpos = UV + offs;
 
 			col = SceneTextureLookup(uvpos, 14, false);
 
@@ -17602,11 +17686,47 @@ for(int i = 0; i < 4; i++)
 
 
 
-float n = pow(RADIUS + 1, 2);
+float n = (RADIUS.x+1)*(RADIUS.y+1);
+
+float sigma_f;
 
 
 
-return mean[0] / n;
+float min = 1;
+
+
+
+for(int i = 0; i < 4; i++)
+
+{
+
+	mean[i] /= n;
+
+	sigma[i] = abs(sigma[i] / n - mean[i] * mean[i]);
+
+	sigma_f = sigma[i].r + sigma[i].g + sigma[i].b;
+
+
+
+	if(sigma_f < min)
+
+	{
+
+		min = sigma_f;
+
+		col = mean[i];
+
+	}
+
+}
+
+
+
+return col;
+
+
+
+
 }
 
 
@@ -17618,7 +17738,7 @@ return mean[0] / n;
 
 
 
-#line 2818 "/Engine/Generated/Material.ush"
+#line 2938 "/Engine/Generated/Material.ush"
 
 
 
@@ -17795,7 +17915,7 @@ float GetMaterialOpacityRaw(FPixelMaterialInputs PixelMaterialInputs)
 	return PixelMaterialInputs.Opacity;
 }
 
-#line 3008 "/Engine/Generated/Material.ush"
+#line 3128 "/Engine/Generated/Material.ush"
 
 
 
@@ -17973,7 +18093,7 @@ float GetMaterialPixelDepthOffset(FPixelMaterialInputs PixelMaterialInputs)
 	return PixelMaterialInputs.PixelDepthOffset;
 }
 
-#line 3200 "/Engine/Generated/Material.ush"
+#line 3320 "/Engine/Generated/Material.ush"
 
 
 float3 TransformTangentNormalToWorld(float3x3 TangentToWorld, float3 TangentNormal)
@@ -18086,10 +18206,13 @@ void CalcPixelMaterialInputs(in out FMaterialPixelParameters Parameters, in out 
 	float4 Local0 = SceneTextureLookup(GetDefaultSceneTextureUV(Parameters, 14), 14, false);
 	float2 Local1 = CustomExpression0(Parameters);
 	float2 Local2 = View.ViewSizeAndInvSize.xy;
-	float3 Local3 = CustomExpression1(Parameters,Local0.rgba,Local1,Material.PreshaderBuffer[1].x,Local2);
-	float3 Local4 = lerp(Local3,Material.PreshaderBuffer[2].xyz,Material.PreshaderBuffer[1].y);
+	float3 Local3 = CustomExpression1(Parameters,Local0.rgba,Local1,Material.PreshaderBuffer[2].xy,Local2);
+	float Local4 = (Local1.r + Material.PreshaderBuffer[2].z);
+	float Local5 = floor(Local4);
+	float3 Local6 = lerp(Local0.rgba.rgb,Local3,Local5);
+	float3 Local7 = lerp(Local6,Material.PreshaderBuffer[3].xyz,Material.PreshaderBuffer[2].w);
 
-	PixelMaterialInputs.EmissiveColor = Local4;
+	PixelMaterialInputs.EmissiveColor = Local7;
 	PixelMaterialInputs.Opacity = 1.00000000;
 	PixelMaterialInputs.OpacityMask = 1.00000000;
 	PixelMaterialInputs.BaseColor = float3(0.00000000,0.00000000,0.00000000);
@@ -18116,7 +18239,7 @@ void CalcPixelMaterialInputs(in out FMaterialPixelParameters Parameters, in out 
 }
 
 
-#line 3423 "/Engine/Generated/Material.ush"
+#line 3549 "/Engine/Generated/Material.ush"
 
 
 
@@ -18149,7 +18272,7 @@ void ClipLODTransition(FMaterialPixelParameters Parameters, float DitherFactor)
 
 
 
-#line 3475 "/Engine/Generated/Material.ush"
+#line 3601 "/Engine/Generated/Material.ush"
 
 void ClipLODTransition(FMaterialPixelParameters Parameters)
 {
@@ -18171,14 +18294,14 @@ void GetMaterialClippingShadowDepth(FMaterialPixelParameters Parameters, FPixelM
 
 }
 
-#line 3508 "/Engine/Generated/Material.ush"
+#line 3634 "/Engine/Generated/Material.ush"
 
 
 void GetMaterialCoverageAndClipping(FMaterialPixelParameters Parameters, FPixelMaterialInputs PixelMaterialInputs)
 {
 	ClipLODTransition(Parameters);
 
-#line 3538 "/Engine/Generated/Material.ush"
+#line 3664 "/Engine/Generated/Material.ush"
 
 }
 
@@ -18195,7 +18318,7 @@ void GetMaterialClippingVelocity(FMaterialPixelParameters Parameters, FPixelMate
 }
 
 
-#line 3585 "/Engine/Generated/Material.ush"
+#line 3711 "/Engine/Generated/Material.ush"
 
 
 
@@ -18354,7 +18477,7 @@ float3x3 AssembleTangentToWorld( float3 TangentToWorld0, float4 TangentToWorld2 
 
 
 
-#line 3763 "/Engine/Generated/Material.ush"
+#line 3889 "/Engine/Generated/Material.ush"
 
 	
 	
@@ -18419,7 +18542,7 @@ void GetEyeNormals(
 	inout float3 OutIrisNormal,
 	inout float3 OutIrisPlaneNormal)
 {
-#line 3839 "/Engine/Generated/Material.ush"
+#line 3965 "/Engine/Generated/Material.ush"
 
   
 
@@ -18517,7 +18640,7 @@ SpeedTreeData, 39846144
 Atmosphere, 11534592
 OpaqueBasePass, 411569516
 BasePass, 165483073
-Material, 4718848
+Material, 5767424
 NULL, 0
 View_MaterialTextureBilinearWrapedSampler, View, 8, 0
 View_MaterialTextureBilinearClampedSampler, View, 8, 1
@@ -18775,7 +18898,7 @@ SpeedTreeData, 39846144
 Atmosphere, 11534592
 OpaqueBasePass, 411569516
 BasePass, 165483073
-Material, 4718848
+Material, 5767424
 NULL, 0
 View_MaterialTextureBilinearWrapedSampler, View, 8, 0
 View_MaterialTextureBilinearClampedSampler, View, 8, 1
